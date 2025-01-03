@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --cor-fundo-principal: #0c0b0b;
+    --cor-fundo-secundario: #1a1919;
+    --cor-texto-claro: rgb(158, 235, 71);
+    --cor-texto-escuro: #ffffff;
+    --cor-secundaria-clara: #d8cece;
+}
+/* Estilos para o modo claro */
+
+html, body.modo-claro {
+    background-color: rgb(229, 229, 229);
+}
+
+body.modo-claro #ola1 {
+    color: rgb(85, 145, 17);
+}
+body.modo-claro #ola2{
+    color: #0c0b0b;
+}
+body.modo-claro .line{
+    color: #0c0b0b;
+    border-right: 2px solid rgb(85, 145, 17);
+}
+body.modo-claro .botao-quadrado {
+    border: 2px solid rgb(85, 145, 17);
+    color: rgb(85, 145, 17);
+}
+body.modo-claro .botao-quadrado:hover {
+    background-color: rgb(85, 145, 17);
+    color: white;
+}
+body.modo-claro .bola-verde {
+    background-color: rgb(85, 145, 17);
+}
+body.modo-claro .sobre-mim{
+    background-color: white;
+}
+body.modo-claro .sobre-mim h1, .sobre-mim p {
+    color: rgb(85, 145, 17);
+}
+body.modo-claro .sobre-mim p {
+    font-size: 16px;
+    color: #000000;
+}
+body.modo-claro .habilidades {
+    background-color: rgb(229, 229, 229);
+}
+body.modo-claro .habilidades h1{
+    color: rgb(85, 145, 17);
+}
+body.modo-claro .habilidades h5{
+    color: rgb(0, 0, 0);
+}
+body.modo-claro .habilidades p{
+    color: rgb(153, 153, 153);
+}
+body.modo-claro .card :hover {
+    color: #c4bfbf;
+
+}
+body.modo-claro .card {
+    background-color: white;
+}
+body.modo-claro.card p {
+    color: #000000;
+}
+
+body.modo-claro.card hr {
+    color: #000000;
+    background-color: #000000;
+}
+
+body.modo-claro.card h5 {
+    color: rgb(0, 0, 0);
+}
+
+body.modo-claro .card:hover {
+    background-color: #5f5b5b;
+}
+body.modo-claro .projetos {
+    background-color: white;
+
+}
+body.modo-claro .projetos h1 {
+    color: rgb(85, 145, 17);
+}
+
+body.modo-claro .card-projeto {
+
+    background-color: rgb(229, 229, 229);
+}
+body.modo-claro .projetos p{
+    color: #5f5b5b;
+}
+body.modo-claro .projetos h3{
+    color: #000000; 
+
+}
+body.modo-claro  .contato h1{
+    color:rgb(85, 145, 17);
+}
+body.modo-claro  .contato i {
+    color: rgb(85, 145, 17);
+  }
+  body.modo-claro .footer{
+    background-color: rgb(229, 229, 229);
+}
+body.modo-claro .footer p{
+    color: #000000;
+}
+body.modo-claro .botao-quadrado:hover i {
+    color: rgb(255, 255, 255); 
+}
+body.modo-claro.icone-footer img {
+    filter: invert(1) grayscale(1) contrast(100%);
+  }
+body.modo-claro .nav {
+    background:rgb(229, 229, 229);
+  }  
+body.modo-claro   ul li a {
+    color: rgb(85, 145, 17);
+  }
+  .nav-sep {
+    color: rgb(85, 145, 17);
+}  
+body.modo-claro ul li a:hover {
+    color: rgb(85, 145, 17);
+  }
+  
+body.modo-claro ul li a::after {
+    background-color: rgb(85, 145, 17);
+  }
+body.modo-claro  .nav .nav-links {
+
+    background-color: rgb(229, 229, 229);
+  }
+ body.modo-claro .nav .navCloseBtn {
+    color: #000000;
+  } 
+  body.modo-claro .nav .navOpenBtn {
+    color: #020202;
+  }
+  body.modo-claro .icone-footer img{
+    filter: brightness(0) contrast(100%);
+
+}
+body.modo-claro   #icone-tema {
+    color: #ffffff; 
+  }
+  body.modo-claro #alternar-tema {    
+    background-color: #000000;   
+  }
+  
+/* modo claro em cima */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #0c0b0b;
+    font-family: 'Roboto', sans-serif; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.apresetacao {
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    z-index: 10; 
+}
+
+#ola1 {
+    font-size: 14px;
+    color: rgb(158, 235, 71);
+
+}
+#ola1, #ola2, .line {
+    margin: 3px;  
+    padding: 6px; 
+  }
+ 
+#ola2 {
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.line {
+    font-size: 24px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #d8cece;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid rgb(158, 235, 71);
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 1.2s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.botao-quadrado {
+    width: 150px;
+    height: 50px;
+    border: 2px solid rgb(158, 235, 71);
+    background-color: transparent;
+    color: rgb(158, 235, 71);
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.botao-quadrado:hover {
+    background-color: rgb(158, 235, 71);
+    color: white;
+}
+
+.bola-verde {
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    transform: translateY(-50%);
+    width: 370px;
+    height: 370px;
+    background-color: rgb(158, 235, 71);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagem-bola {
+    width: 800px;
+    height: 400px;
+    animation: subirDescer 2.2s infinite ease-in-out;
+}
+
+@keyframes subirDescer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.sobre-mim {
+    background-color: #1a1919;
+    padding: 90px;
+    margin-top: 100vh;
+    transition: margin-top 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 130px;
+    text-align: center;
+}
+
+.sobre-mim img {
+    max-width: 390px;
+    height: 390px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); 
+    transition: transform 0.8s ease-in-out;
+}
+
+.sobre-mim h1, .sobre-mim p {
+    margin: 0;
+    color: rgb(158, 235, 71);
+}
+
+.sobre-mim .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.sobre-mim p {
+    font-size: 16px;
+    color: #d8cece;
+}
+.sobre-mim img:hover {
+    transform: scale(1.1); 
+}
+.habilidades {
+    background-color: #0c0b0b;
+    justify-content: center;
+    padding: 90px;
+    text-align: center;
+}
+.habilidades h1{
+    color: rgb(158, 235, 71);
+    margin-bottom: 30px; 
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.card {
+    display: flex;
+    width: calc(33.33% - 20px); 
+    padding: 20px;
+    margin: 10px 0; 
+    border-radius: 10px;
+    background-color: #1a1919;
+    box-shadow: 0px 6px 8px rgba(66, 64, 64, 0.1);
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    text-align: left;
+    object-fit: cover;
+    margin-bottom: 10px;
+    filter: grayscale(100%) brightness(100%) contrast(100%) invert(100%);
+}
+
+.card p {
+    font-size: 16px;
+    color: #adadad;
+    margin: 0;
+    text-align: left;
+}
+
+.card hr {
+    color: #d8cece;
+    background-color: #d8cece;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.card h5 {
+    color: white;
+    text-align: left;
+}
+
+.card:hover {
+    background-color: #5f5b5b;
+}
+.projetos {
+    background-color: #1a1919;
+    padding: 90px 20px;
+    transition: margin-top 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px; 
+    text-align: center;
+}
+
+.projetos h1 {
+    color: rgb(158, 235, 71);
+}
+
+.card-projeto img {
+    width: 350px;
+    height: 188px;
+    border-radius: 5px;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card-projeto {
+    cursor: pointer;
+    background-color:#0c0b0b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%; 
+}
+.icons {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+}
+
+.card-projeto:hover .icons {
+    display: flex; 
+ 
+}
+
+.icons a img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icons a img:hover {
+    transform: scale(1.1); 
+    filter: brightness(0) saturate(80%) invert(1);
+}
+.card-projeto:hover img {
+    filter: grayscale(100%); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+.icons a {
+    display: inline-block;
+    background-color: white; 
+    border-radius: 50%; 
+    padding: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.icons a:hover {
+    background-color: black; 
+}
+
+.icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+.projetos p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #c4bfbf; 
+    font-size: 1.0em;
+    font-weight: normal; 
+}
+.projetos h3{
+    color: #ffffff; 
+
+}
+.icons {
+    display: none;
+}
+.contato h1{
+    color:rgb(158, 235, 71);
+}
+.contato i {
+    color: rgb(158, 235, 71);
+  }
+  .contato p {
+    color: #c4bfbf; 
+  }
+  .botao-quadrado i {
+    margin-right: 8px;  
+  }
+  .botao-quadrado:hover i {
+    color: white;  
+  }
+  .contato {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 90px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.botao-quadrado:hover i {
+    color: white; 
+}
+.contato p, .contato a {
+    margin: 10px 0; 
+}
+@keyframes subirDescer {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+
+.contato img {
+    max-width: 300px; 
+    height: 300px;
+    animation: subirDescer 2.2s infinite ease-in-out; 
+}
+
+.footer p{
+    color: #5f5b5b;
+}
+footer {
+    text-align: left; 
+    padding: 30px; 
+}
+footer p {
+    margin: 10px 60px; 
+}
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 90px; 
+}
+
+footer p {
+    margin: 0;
+}
+
+.icone-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.icone-footer img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.8s ease; 
+    cursor: pointer;
+    
+}
+.icone-footer img:hover {
+    transform: scale(1.2);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    padding: 15px 200px;
+    background: #1a1919;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .nav,
+  .nav .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    justify-content: space-between;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav .logo {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .nav .nav-links {
+    column-gap: 20px;
+    list-style: none;
+  }
+  
+  .nav .nav-links a {
+    transition: all 0.2s linear;
+  }
+  
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: none;
+  }
+  
+
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(158, 235, 71);
+    font-size: 18px;
+  }
+  
+  .icone-cabecalho {
+    display: flex;
+  }
+  
+  .icone-cabecalho a {
+    margin-left: 15px;
+  }
+  
+  .icone-cabecalho img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(36%) sepia(67%) saturate(712%) hue-rotate(83deg) brightness(95%) contrast(98%);
+  }
+  
+  .icone-cabecalho img:hover {
+    transform: scale(1.2);
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(158, 235, 71);
+    font-size: 18px;
+    position: relative;
+  }
+  
+  ul li a:hover {
+    color: rgb(158, 235, 71);
+  }
+  
+  ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(158, 235, 71);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.nav-sep {
+
+    color: rgb(158, 235, 71);;
+}  
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.tema-escuro {
+    background-color: #333;
+    color: white;
+  }
+
+  .botao-quadrado i {
+    transition: transform 0.3s;
+  }
+  
+  .tema-escuro .botao-quadrado i {
+    transform: rotate(180deg); 
+  }
+  body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.modo-claro {
+  background-color: #fff;
+  color: #333;
+}
+
+body.modo-escuro {
+  background-color: #333;
+  color: white;
+}
+
+.tema-toggle {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.input-tema {
+  display: none; 
+}
+
+.tema-toggle label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tema-toggle input:checked + i {
+  color: #f39c12; 
+}
+
+body.modo-claro .fa-moon,
+body.modo-escuro .fa-sun {
+  opacity: 0.5; 
+}
+
+body.modo-escuro .fa-sun,
+body.modo-claro .fa-moon {
+  opacity: 1;
+}
+#alternar-tema {
+    position: fixed;  
+    bottom: 20px;    
+    right: 10px;   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   
+    background-color: #ffffff;  
+    border: none;    
+    padding: 15px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;  
+    transition: transform 0.3s ease-in-out; 
+    z-index: 9999;    
+    animation: pulse 1.5s infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#alternar-tema:hover {
+    transform: scale(1.1); 
+}
+
+#icone-tema {
+    color: #000000; 
+    font-size: 24px; 
+}
