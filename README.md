@@ -3,4 +3,4 @@
 <img src="portifolio/img/Captura de Tela (67).png" alt="Imagem do projeto finalizado">
 
 
-<h4 align="center"><a href="">Confira o projeto aqui</a></h4>
+<h4 align="center"><a href="https://thiago-pereira.netlify.app/">Confira o projeto aqui</a></h4>
