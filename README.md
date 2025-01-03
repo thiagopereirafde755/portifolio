@@ -1,5 +1,6 @@
 <h1 align="center">Portifólio - Thiago 💻</h1>
 
-![Imagem do projeto finalizado](portifolio/img/Captura de Tela (66).png)
+<img src="portifolio/img/Captura de Tela (66).png" alt="Imagem do projeto finalizado">
+
 
 <h4 align="center"><a href="">Confira o projeto aqui</a></h4>
